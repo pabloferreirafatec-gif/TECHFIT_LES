@@ -394,3 +394,115 @@
 .footer-bottom p {
     font-size: 9px;
 }
+
+/* Página de exercícios */
+
+.exercise-hero {
+    background: var(--background);
+}
+
+.exercise-hero-text > span {
+    color: var(--green);
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.exercise-hero-text h1 {
+    margin: 8px 0 14px;
+
+    font-size: 42px;
+    line-height: 1.05;
+}
+
+.exercise-hero-text p {
+    font-size: 14px;
+}
+
+
+/* Filtros */
+
+.filter {
+    min-width: 120px;
+    height: 42px;
+
+    padding: 0 25px;
+
+    border: 1px solid var(--border);
+    border-radius: 25px;
+
+    color: var(--text);
+    background: var(--background);
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.filter:hover {
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.filter.active {
+    color: var(--white);
+    background: var(--green);
+    border-color: var(--green);
+}
+
+
+/* Cards */
+
+.exercise-card {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.exercise-image {
+    border-radius: 7px;
+}
+
+.exercise-info h3 {
+    font-size: 16px;
+}
+
+.exercise-info p {
+    font-size: 13px;
+}
+
+.exercise-arrow {
+    color: #7797ad;
+
+    font-size: 28px;
+}
+
+
+/* Tags */
+
+.tag {
+    padding: 4px 12px;
+
+    border-radius: 12px;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.tag.muscle {
+    color: #259bc4;
+    background: #e5f6fc;
+}
+
+.tag.beginner {
+    color: var(--green);
+    background: var(--green-light);
+}
+
+.tag.intermediate {
+    color: #c78b00;
+    background: #fff3cc;
+}
