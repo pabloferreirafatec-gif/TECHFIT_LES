@@ -48,6 +48,8 @@
     width: 100%;
     height: 340px;
     overflow: hidden;
+
+    margin-top: 25px;
 }
 
 .hero-content {
@@ -494,43 +496,43 @@
         gap: 10px;
     }
 
-    .exercise-hero {
-    height: 380px;
-}
+        .exercise-hero {
+        height: 380px;
+    }
 
-.exercise-hero-text {
-    width: 100%;
-}
+    .exercise-hero-text {
+        width: 100%;
+    }
 
-.exercise-hero-image {
-    opacity: 0.25;
-    width: 100%;
-}
+    .exercise-hero-image {
+        opacity: 0.25;
+        width: 100%;
+    }
 
-.exercise-filters {
-    overflow-x: auto;
-}
+    .exercise-filters {
+        overflow-x: auto;
+    }
 
-.filter {
-    flex-shrink: 0;
-}
+    .filter {
+        flex-shrink: 0;
+    }
 
-.exercise-card {
-    min-height: 110px;
-}
+    .exercise-card {
+        min-height: 110px;
+    }
 
-.exercise-image {
-    width: 110px;
-    height: 90px;
-}
+    .exercise-image {
+        width: 110px;
+        height: 90px;
+    }
 
-.exercise-info {
-    margin-left: 15px;
-}
+    .exercise-info {
+        margin-left: 15px;
+    }
 
-.exercise-info p {
-    display: none;
-}
+    .exercise-info p {
+        display: none;
+    }
 
 }
 
@@ -618,13 +620,12 @@
     position: absolute;
 
     z-index: 5;
-
     top: 0;
     left: 17%;
-
+    top: 10px;
+    left: 65%;
     width: 370px;
 }
-
 
 /* Mulher */
 
@@ -632,13 +633,13 @@
     position: absolute;
 
     z-index: 4;
-
     left: 13%;
     bottom: 0;
-
     height: 83%;
+    left: 0%;
+    bottom: 0;
+    height: 100%;
     max-width: none;
-
     object-fit: contain;
 }
 
@@ -684,7 +685,6 @@
     background: #00c86f;
 }
 
-
 /* Frase */
 
 .banner-message {
@@ -694,8 +694,9 @@
 
     right: 25px;
     bottom: 105px;
-
     width: 170px;
+    width: 200px;
+
 }
 
 
@@ -707,8 +708,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-
     padding: 20px 30px 0;
+    padding: 120px 30px 0;
 }
 
 .login-form {
@@ -937,6 +938,7 @@
     .register-form-area {
         padding: 40px;
     }
+
 }
 
 
