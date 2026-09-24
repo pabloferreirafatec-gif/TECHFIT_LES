@@ -531,4 +531,427 @@
 .exercise-info p {
     display: none;
 }
+
+}
+
+.login-page {
+    width: 100%;
+    min-height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            115deg,
+            #ffffff 0%,
+            #f7fafc 40%,
+            #edf4f8 100%
+        );
+}
+
+
+/* Página de login */
+
+.login-page {
+    width: 100%;
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    background: linear-gradient(
+        115deg,
+        #ffffff 0%,
+        #f7fafc 45%,
+        #edf4f8 100%
+    );
+}
+
+
+/* Logo */
+
+.login-header {
+    width: 100%;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 30px;
+}
+
+.login-logo {
+    width: 120px;
+}
+
+.login-logo img {
+    width: 100%;
+}
+
+
+/* Estrutura principal */
+
+.login-container {
+    width: 100%;
+    height: calc(100vh - 65px);
+
+    display: grid;
+    grid-template-columns: 48% 52%;
+}
+
+
+/* Lado esquerdo */
+
+.login-banner {
+    position: relative;
+
+    height: 100%;
+
+    overflow: hidden;
+}
+
+
+/* Título */
+
+.banner-title {
+    position: absolute;
+
+    z-index: 5;
+
+    top: 0;
+    left: 17%;
+
+    width: 370px;
+}
+
+
+/* Mulher */
+
+.login-model {
+    position: absolute;
+
+    z-index: 4;
+
+    left: 13%;
+    bottom: 0;
+
+    height: 83%;
+    max-width: none;
+
+    object-fit: contain;
+}
+
+
+/* Barras */
+
+.decoration {
+    position: absolute;
+
+    z-index: 2;
+
+    height: 55px;
+
+    border-radius: 10px;
+
+    transform: rotate(-43deg);
+}
+
+.green-one {
+    width: 220px;
+
+    left: -70px;
+    top: 150px;
+
+    background: #00c86f;
+}
+
+.blue-one {
+    width: 280px;
+
+    left: 180px;
+    top: 275px;
+
+    background: #04b8d8;
+}
+
+.green-two {
+    width: 250px;
+
+    left: -50px;
+    bottom: 45px;
+
+    background: #00c86f;
+}
+
+
+/* Frase */
+
+.banner-message {
+    position: absolute;
+
+    z-index: 5;
+
+    right: 25px;
+    bottom: 105px;
+
+    width: 170px;
+}
+
+
+/* Área do formulário */
+
+.login-form-container {
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 20px 30px 0;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 570px;
+}
+
+/* Cadastro */
+
+.register {
+    min-height: calc(100vh - 72px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 45px 20px;
+}
+
+.register-container {
+    width: 1000px;
+    max-width: 100%;
+    min-height: 570px;
+
+    display: grid;
+    grid-template-columns: 45% 55%;
+
+    overflow: hidden;
+}
+
+.register-intro {
+    position: relative;
+
+    min-height: 570px;
+
+    padding: 35px 45px;
+
+    overflow: hidden;
+}
+
+.register-intro-text {
+    position: relative;
+    z-index: 3;
+
+    width: 100%;
+
+    margin-top: 55px;
+
+    text-align: center;
+}
+
+.register-intro-text p {
+    max-width: 330px;
+
+    margin: 10px auto 0;
+
+    text-align: center;
+}
+
+.register-image {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 72%;
+    height: 65%;
+
+    z-index: 2;
+}
+
+.register-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: left bottom;
+}
+
+.register-message {
+    position: absolute;
+
+    right: 35px;
+    bottom: 75px;
+
+    z-index: 3;
+}
+
+.register-form-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 55px;
+}
+
+.register-form {
+    width: 100%;
+    max-width: 420px;
+}
+
+.register-title {
+    margin-bottom: 22px;
+
+    text-align: center;
+}
+
+.register-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    width: 100%;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+
+    margin: 6px 0 13px;
+}
+
+.input-group section {
+    width: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.input-group input {
+    width: 100%;
+    height: 100%;
+
+    padding-right: 15px;
+}
+
+.register-terms {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 9px;
+
+    margin: 3px 0 16px;
+}
+
+.register-terms input {
+    margin-top: 3px;
+
+    flex-shrink: 0;
+}
+
+.register-button {
+    width: 100%;
+    height: 43px;
+}
+
+.register-divider {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 17px 0;
+}
+
+.register-divider section {
+    height: 1px;
+
+    flex: 1;
+}
+
+.google-button {
+    width: 100%;
+    height: 43px;
+}
+
+.login-link {
+    margin-top: 17px;
+
+    text-align: center;
+}
+
+/* Responsividade */
+
+@media (max-width: 900px) {
+
+    .login-container {
+        height: auto;
+
+        grid-template-columns: 1fr;
+    }
+
+    .login-banner {
+        display: none;
+    }
+
+    .login-form-container {
+        min-height: calc(100vh - 65px);
+
+        justify-content: center;
+
+        padding: 40px 20px;
+    }
+
+    .login-form {
+        max-width: 520px;
+    }
+
+    .register {
+    padding: 30px 20px;
+    }
+
+    .register-container {
+        width: 600px;
+
+        grid-template-columns: 1fr;
+    }
+
+    .register-intro {
+        display: none;
+    }
+
+    .register-form-area {
+        padding: 40px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .login-header {
+        padding: 0 20px;
+    }
+
+    .login-logo {
+        width: 105px;
+    }
+
+    .login-form-container {
+        padding: 25px 15px;
+    }
+
 }

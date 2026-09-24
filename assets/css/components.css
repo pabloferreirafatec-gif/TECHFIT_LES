@@ -135,7 +135,7 @@
     letter-spacing: -1.5px;
 }
 
-.hero h1 span {
+.hero h1 section {
     color: var(--green);
 }
 
@@ -256,7 +256,7 @@
     line-height: 1.05;
 }
 
-.cta-content h2 span {
+.cta-content h2 section {
     color: var(--green);
 }
 
@@ -352,7 +352,7 @@
     overflow: hidden;
 }
 
-.newsletter-form > span {
+.newsletter-form > section {
     margin-left: 14px;
 
     color: #bdcad4;
@@ -401,7 +401,7 @@
     background: var(--background);
 }
 
-.exercise-hero-text > span {
+.exercise-hero-text > section {
     color: var(--green);
 
     font-size: 13px;
@@ -437,7 +437,173 @@
     font-size: 13px;
 
     cursor: pointer;
+}
+/* Título */
 
+.banner-title h1 {
+    margin-bottom: 10px;
+
+    color: var(--navy);
+
+    font-size: 25px;
+}
+
+.banner-title p {
+    color: var(--text-light);
+
+    font-size: 13px;
+}
+
+
+/* Frase do banner */
+
+.banner-message p {
+    color: var(--text-light);
+
+    font-size: 17px;
+    line-height: 1.15;
+}
+
+.banner-message strong {
+    color: var(--green);
+
+    font-weight: 700;
+}
+
+
+/* Formulário */
+
+.login-form {
+    padding: 28px 35px 35px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.025);
+}
+
+.login-form h2 {
+    margin-bottom: 24px;
+
+    color: var(--navy);
+
+    font-size: 24px;
+}
+
+
+/* Campos */
+
+.input-group {
+    width: 100%;
+    height: 48px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 17px;
+
+    border: 1px solid #c9d9e5;
+    border-radius: 9px;
+
+    background: var(--white);
+}
+
+.input-icon {
+    width: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #55768f;
+
+    font-size: 18px;
+}
+
+.input-group input {
+    height: 100%;
+
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    color: var(--text);
+
+    background: transparent;
+
+    font-size: 13px;
+}
+
+.input-group input::placeholder {
+    color: var(--text-light);
+}
+
+
+/* Mostrar senha */
+
+.show-password {
+    width: 45px;
+    height: 100%;
+
+    color: var(--text-light);
+
+    background: transparent;
+}
+
+
+/* Lembrar senha */
+
+.login-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 5px 0 20px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    color: #526b7e;
+
+    font-size: 12px;
+}
+
+.remember input {
+    width: 18px;
+    height: 18px;
+
+    accent-color: var(--green);
+}
+
+.login-options > a {
+    color: #00bfc4;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* Botão entrar */
+
+.btn-login {
+    width: 100%;
+    height: 45px;
+
+    border-radius: 9px;
+
+    color: var(--white);
+    background: var(--green);
+
+    font-size: 13px;
+    font-weight: 700;
     transition: 0.2s;
 }
 
@@ -505,4 +671,361 @@
 .tag.intermediate {
     color: #c78b00;
     background: #fff3cc;
+}
+.btn-login:hover {
+    background: var(--green-dark);
+}
+
+
+/* Separador */
+
+.separator {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 20px 0;
+}
+
+.separator section {
+    height: 1px;
+
+    flex: 1;
+
+    background: var(--border);
+}
+
+.separator p {
+    color: #8297a8;
+
+    font-size: 11px;
+}
+
+
+/* Google */
+
+.btn-google {
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    border: 1px solid #c9d9e5;
+    border-radius: 9px;
+
+    color: #304b61;
+    background: var(--white);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.google-icon {
+    color: #4285f4;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Cadastro */
+
+.register {
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+}
+
+.register a {
+    color: #00bfc4;
+
+    font-weight: 600;
+
+    text-decoration: underline;
+}
+
+.register-page {
+    background:
+        linear-gradient(
+            135deg,
+            #f5f9fc,
+            #eaf4f8
+        );
+}
+
+.register-container {
+    background: var(--white);
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 35px rgba(7, 28, 44, 0.10);
+}
+
+
+/* Lado esquerdo */
+
+.register-intro {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f2f8fc
+        );
+}
+
+.register-intro::after {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 35px;
+
+    left: -40px;
+    bottom: 150px;
+
+    background: var(--green);
+
+    transform: rotate(-45deg);
+
+    opacity: 0.95;
+}
+
+.register-intro-text h2 {
+    margin-bottom: 8px;
+
+    font-size: 23px;
+}
+
+.register-intro-text p {
+    max-width: 300px;
+
+    font-size: 15px;
+}
+
+.register-message {
+    color: var(--green);
+
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.register-message strong {
+    color: var(--navy);
+}
+
+
+/* Formulário */
+
+.register-form-area {
+    background: var(--white);
+}
+
+.register-title h1 {
+    margin-bottom: 6px;
+
+    font-size: 27px;
+}
+
+.register-title p {
+    font-size: 13px;
+}
+
+.register-form form > label {
+    color: var(--navy);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.input-group {
+    border: 1px solid var(--border);
+    border-radius: 7px;
+
+    background: var(--white);
+
+    transition: 0.2s;
+}
+
+.input-group:focus-within {
+    border-color: var(--green);
+
+    box-shadow:
+        0 0 0 2px rgba(0, 200, 111, 0.08);
+}
+
+.input-group section {
+    color: #7891a5;
+
+    font-size: 16px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+
+    color: var(--text);
+    background: transparent;
+
+    font-size: 12px;
+}
+
+.input-group input::placeholder {
+    color: #9aaebb;
+}
+
+/* Botão Google */
+
+/* Google */
+
+.google-button {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    border: 1px solid var(--border);
+    border-radius: 7px;
+
+    background: var(--white);
+
+    cursor: pointer;
+}
+
+.google-button .google-icon {
+    width: 20px !important;
+    height: 20px !important;
+    max-width: 20px !important;
+
+    object-fit: contain;
+}
+
+.google-button p {
+    margin: 0;
+
+    color: var(--text);
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+/* Termos */
+
+.register-terms label {
+    color: var(--text-light);
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.register-terms a {
+    color: var(--green);
+
+    font-weight: 700;
+}
+
+
+/* Botão cadastrar */
+
+.register-button {
+    border-radius: 7px;
+
+    color: var(--white);
+    background: var(--green);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.register-button:hover {
+    background: var(--green-dark);
+}
+
+
+/* Divisor */
+
+.register-divider section {
+    background: var(--border);
+}
+
+.register-divider p {
+    color: #8ba0b0;
+
+    font-size: 11px;
+}
+
+
+/* Google */
+
+.google-button {
+    border: 1px solid var(--border);
+    border-radius: 7px;
+
+    color: var(--text);
+    background: var(--white);
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.google-button:hover {
+    background: var(--background);
+}
+
+.google-button section {
+    margin-right: 10px;
+
+    color: #4285f4;
+
+    font-weight: 700;
+}
+
+
+/* Entrar */
+
+.login-link {
+    color: var(--text-light);
+
+    font-size: 11px;
+}
+
+.login-link a {
+    color: var(--green);
+
+    font-weight: 700;
+}
+
+/* Responsividade */
+
+@media (max-width: 500px) {
+
+    .login-form {
+        padding: 25px 20px;
+    }
+
+    .login-options {
+        gap: 15px;
+    }
 }
