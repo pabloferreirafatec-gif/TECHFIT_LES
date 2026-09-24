@@ -402,13 +402,13 @@
 
     color: var(--navy);
 
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .banner-title p {
     color: var(--text-light);
 
-    font-size: 13px;
+    font-size: 20px;
 }
 
 
@@ -417,8 +417,8 @@
 .banner-message p {
     color: var(--text-light);
 
-    font-size: 17px;
-    line-height: 1.15;
+    font-size: 25px;
+    line-height: 1.20;
 }
 
 .banner-message strong {

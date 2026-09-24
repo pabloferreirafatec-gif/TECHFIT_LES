@@ -472,12 +472,11 @@
 
     z-index: 5;
 
-    top: 0;
-    left: 17%;
+    top: 10px;
+    left: 65%;
 
     width: 370px;
 }
-
 
 /* Mulher */
 
@@ -486,55 +485,13 @@
 
     z-index: 4;
 
-    left: 13%;
+    left: 0%;
     bottom: 0;
 
-    height: 83%;
+    height: 100%;
     max-width: none;
 
     object-fit: contain;
-}
-
-
-/* Barras */
-
-.decoration {
-    position: absolute;
-
-    z-index: 2;
-
-    height: 55px;
-
-    border-radius: 10px;
-
-    transform: rotate(-43deg);
-}
-
-.green-one {
-    width: 220px;
-
-    left: -70px;
-    top: 150px;
-
-    background: #00c86f;
-}
-
-.blue-one {
-    width: 280px;
-
-    left: 180px;
-    top: 275px;
-
-    background: #04b8d8;
-}
-
-.green-two {
-    width: 250px;
-
-    left: -50px;
-    bottom: 45px;
-
-    background: #00c86f;
 }
 
 
@@ -548,7 +505,7 @@
     right: 25px;
     bottom: 105px;
 
-    width: 170px;
+    width: 200px;
 }
 
 
@@ -561,7 +518,7 @@
     justify-content: flex-start;
     align-items: flex-start;
 
-    padding: 20px 30px 0;
+    padding: 120px 30px 0;
 }
 
 .login-form {
