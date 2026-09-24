@@ -394,3 +394,268 @@
 .footer-bottom p {
     font-size: 9px;
 }
+
+/* Título */
+
+.banner-title h1 {
+    margin-bottom: 10px;
+
+    color: var(--navy);
+
+    font-size: 25px;
+}
+
+.banner-title p {
+    color: var(--text-light);
+
+    font-size: 13px;
+}
+
+
+/* Frase do banner */
+
+.banner-message p {
+    color: var(--text-light);
+
+    font-size: 17px;
+    line-height: 1.15;
+}
+
+.banner-message strong {
+    color: var(--green);
+
+    font-weight: 700;
+}
+
+
+/* Formulário */
+
+.login-form {
+    padding: 28px 35px 35px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.025);
+}
+
+.login-form h2 {
+    margin-bottom: 24px;
+
+    color: var(--navy);
+
+    font-size: 24px;
+}
+
+
+/* Campos */
+
+.input-group {
+    width: 100%;
+    height: 48px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 17px;
+
+    border: 1px solid #c9d9e5;
+    border-radius: 9px;
+
+    background: var(--white);
+}
+
+.input-icon {
+    width: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #55768f;
+
+    font-size: 18px;
+}
+
+.input-group input {
+    height: 100%;
+
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    color: var(--text);
+
+    background: transparent;
+
+    font-size: 13px;
+}
+
+.input-group input::placeholder {
+    color: var(--text-light);
+}
+
+
+/* Mostrar senha */
+
+.show-password {
+    width: 45px;
+    height: 100%;
+
+    color: var(--text-light);
+
+    background: transparent;
+}
+
+
+/* Lembrar senha */
+
+.login-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 5px 0 20px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    color: #526b7e;
+
+    font-size: 12px;
+}
+
+.remember input {
+    width: 18px;
+    height: 18px;
+
+    accent-color: var(--green);
+}
+
+.login-options > a {
+    color: #00bfc4;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* Botão entrar */
+
+.btn-login {
+    width: 100%;
+    height: 45px;
+
+    border-radius: 9px;
+
+    color: var(--white);
+    background: var(--green);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.btn-login:hover {
+    background: var(--green-dark);
+}
+
+
+/* Separador */
+
+.separator {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 20px 0;
+}
+
+.separator span {
+    height: 1px;
+
+    flex: 1;
+
+    background: var(--border);
+}
+
+.separator p {
+    color: #8297a8;
+
+    font-size: 11px;
+}
+
+
+/* Google */
+
+.btn-google {
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    border: 1px solid #c9d9e5;
+    border-radius: 9px;
+
+    color: #304b61;
+    background: var(--white);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.google-icon {
+    color: #4285f4;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Cadastro */
+
+.register {
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+}
+
+.register a {
+    color: #00bfc4;
+
+    font-weight: 600;
+
+    text-decoration: underline;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 500px) {
+
+    .login-form {
+        padding: 25px 20px;
+    }
+
+    .login-options {
+        gap: 15px;
+    }
+}
