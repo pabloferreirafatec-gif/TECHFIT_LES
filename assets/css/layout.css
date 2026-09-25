@@ -41,6 +41,13 @@
     gap: 14px;
 }
 
+.header-user-name {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
 
 /* Hero */
 
