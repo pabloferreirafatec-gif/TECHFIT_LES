@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+
+    <title>Planos - TechFit</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <section class="container header-content">
+
+            <a href="../index.html" class="logo">
+
+                <img
+                    src="../assets/img/logo_techfit.png"
+                    alt="Logo TechFit">
+
+            </a>
+
+            <nav class="menu">
+
+                <a href="../index.html">
+                    Início
+                </a>
+
+                <a href="exercicios.html">
+                    Exercícios
+                </a>
+
+                <a href="planos.html" class="active">
+                    Planos
+                </a>
+
+                <a href="sobre.html">
+                    Sobre
+                </a>
+
+            </nav>
+
+            <section class="header-actions">
+
+                <a href="perfil.html" class="user-button">
+
+                    <img
+                        src="../assets/img/icon_user.png"
+                        alt="Usuário">
+
+                </a>
+
+            </section>
+
+        </section>
+
+    </header>
+
+
+    <main class="plans-page">
+
+        <!-- Apresentação -->
+
+        <section class="plans-hero">
+
+            <section class="container plans-hero-content">
+
+                <section class="plans-hero-text">
+
+                    <p class="plans-label">
+                        PLANO DE TREINO
+                    </p>
+
+                    <h1>
+                        Seu plano, do seu jeito
+                    </h1>
+
+                    <p class="plans-description">
+                        Escolha o plano ideal para o seu objetivo e comece hoje mesmo.
+                        Todos os treinos são pensados para iniciantes, com foco em
+                        segurança e evolução constante.
+                    </p>
+
+                </section>
+
+
+                <section class="plans-hero-image">
+
+                    <img
+                        src="../assets/img/calendar.png"
+                        alt="Calendário de treino">
+
+                </section>
+
+            </section>
+
+        </section>
+
+
+        <!-- Tipos de plano -->
+
+        <section class="plan-types">
+
+    <section class="container plan-types-grid">
+
+        <button class="plan-type active" data-plan="emagrecimento">
+            <section class="plan-type-icon">
+                🔥
+            </section>
+            <p>Emagrecimento</p>
+        </button>
+
+        <button class="plan-type" data-plan="massa">
+            <section class="plan-type-icon">
+                🏋
+            </section>
+            <p>Ganho de massa</p>
+        </button>
+
+        <button class="plan-type" data-plan="disposicao">
+            <section class="plan-type-icon">
+                ⚡
+            </section>
+            <p>Mais disposição</p>
+        </button>
+
+        <button class="plan-type" data-plan="saude">
+            <section class="plan-type-icon">
+                ♡
+            </section>
+            <p>Saúde geral</p>
+        </button>
+
+    </section>
+
+</section>
+
+
+        <!-- Plano selecionado -->
+
+        <section class="plan-content">
+
+            <section class="container">
+
+                <section class="plan-title">
+
+                    <h2 id="plan-title">
+                        Plano de Emagrecimento
+                    </h2>
+
+                    <p id="plan-description">
+                        Treinos de 3 a 4 dias por semana, com foco em queima
+                        de gordura e condicionamento físico.
+                    </p>
+
+                </section>
+
+
+                <!-- Informações -->
+
+                <section class="plan-information">
+
+                    <section class="plan-information-item">
+
+                        <section class="plan-information-icon">
+                            ⏱
+                        </section>
+
+                        <section>
+
+                            <p>
+                                Duração
+                            </p>
+
+                            <strong id="plan-duration">
+                                4 semanas
+                            </strong>
+
+                        </section>
+
+                    </section>
+
+
+                    <section class="plan-information-item">
+
+                        <section class="plan-information-icon">
+                            ▤
+                        </section>
+
+                        <section>
+
+                            <p>
+                                Frequência
+                            </p>
+
+                            <strong id="plan-frequency">
+                                3 a 4x por semana
+                            </strong>
+
+                        </section>
+
+                    </section>
+
+
+                    <section class="plan-information-item">
+
+                        <section class="plan-information-icon">
+                            📈
+                        </section>
+
+                        <section>
+
+                            <p>
+                                Nível
+                            </p>
+
+                            <strong id="plan-level">
+                                Iniciante
+                            </strong>
+
+                        </section>
+
+                    </section>
+
+                </section>
+
+
+                <!-- Semanas -->
+
+                <section class="weeks-list" id="weeks-list">
+
+
+                    <!-- Semana 1 -->
+
+                    <a href="#" class="week-card">
+
+                        <section class="week-icon">
+                            <img src="../assets/img/icon_calendar.png" alt="Calendário">
+                        </section>
+
+                        <section class="week-description">
+
+                            <h3>
+                                Semana 1
+                            </h3>
+
+                            <p>
+                                Adaptação e condicionamento
+                            </p>
+
+                        </section>
+
+                        <section class="week-training">
+                            3 treinos
+                        </section>
+
+                        <section class="week-arrow">
+                            ›
+                        </section>
+
+                    </a>
+
+
+                    <!-- Semana 2 -->
+
+                    <a href="#" class="week-card">
+
+                        <section class="week-icon">
+                            <img src="../assets/img/icon_calendar.png" alt="Calendário">
+                        </section>
+
+                        <section class="week-description">
+
+                            <h3>
+                                Semana 2
+                            </h3>
+
+                            <p>
+                                Aumento da intensidade
+                            </p>
+
+                        </section>
+
+                        <section class="week-training">
+                            3 treinos
+                        </section>
+
+                        <section class="week-arrow">
+                            ›
+                        </section>
+
+                    </a>
+
+
+                    <!-- Semana 3 -->
+
+                    <a href="#" class="week-card">
+
+                        <section class="week-icon">
+                            <img src="../assets/img/icon_calendar.png" alt="Calendário">
+                        </section>
+
+                        <section class="week-description">
+
+                            <h3>
+                                Semana 3
+                            </h3>
+
+                            <p>
+                                Força e resistência
+                            </p>
+
+                        </section>
+
+                        <section class="week-training">
+                            4 treinos
+                        </section>
+
+                        <section class="week-arrow">
+                            ›
+                        </section>
+
+                    </a>
+
+
+                    <!-- Semana 4 -->
+
+                    <a href="#" class="week-card">
+
+                        <section class="week-icon">
+                            <img src="../assets/img/icon_calendar.png" alt="Calendário">
+                        </section>
+
+                        <section class="week-description">
+
+                            <h3>
+                                Semana 4
+                            </h3>
+
+                            <p>
+                                Resultado e manutenção
+                            </p>
+
+                        </section>
+
+                        <section class="week-training">
+                            4 treinos
+                        </section>
+
+                        <section class="week-arrow">
+                            ›
+                        </section>
+
+                    </a>
+
+                </section>
+
+
+                <!-- Botão -->
+
+                <a href="#" class="plan-details-button">
+
+                    Ver detalhes do plano
+
+                    <section>
+                        →
+                    </section>
+
+                </a>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <section class="container footer-grid">
+
+            <section class="footer-brand">
+
+                <img
+                    src="../assets/img/logo_techfit.png"
+                    alt="Logo TechFit"
+                    class="footer-logo">
+
+                <p>
+                    Mais que um site, um parceiro<br>
+                    na sua jornada por uma vida<br>
+                    mais saudável.
+                </p>
+
+            </section>
+
+
+            <section class="footer-links">
+
+                <h3>
+                    Links úteis
+                </h3>
+
+                <a href="../index.html">Início</a>
+                <a href="exercicios.html">Exercícios</a>
+                <a href="planos.html">Planos</a>
+                <a href="sobre.html">Sobre</a>
+
+            </section>
+
+
+            <section class="footer-links">
+
+                <h3>
+                    Suporte
+                </h3>
+
+                <a href="#">Central de ajuda</a>
+                <a href="#">Termos de uso</a>
+                <a href="#">Política de privacidade</a>
+                <a href="#">Contato</a>
+
+            </section>
+
+
+            <section class="newsletter">
+
+                <h3>
+                    Receba nossas novidades
+                </h3>
+
+                <p>
+                    Dicas, treinos e conteúdos exclusivos
+                    para você evoluir sempre.
+                </p>
+
+                <form class="newsletter-form">
+
+                    <section>
+                        ✉
+                    </section>
+
+                    <input
+                        type="email"
+                        placeholder="Seu e-mail">
+
+                    <button type="submit">
+                        →
+                    </button>
+
+                </form>
+
+            </section>
+
+        </section>
+
+
+        <section class="container footer-bottom">
+
+            <p>
+                © 2026 TechFit. Todos os direitos reservados.
+            </p>
+
+            <p>
+                Juntos por uma vida mais saudável.
+            </p>
+
+        </section>
+
+    </footer>
+
+    <script src="../assets/js/planos.js"></script>
+</body>
+
+</html>

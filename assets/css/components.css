@@ -1029,6 +1029,849 @@
     font-weight: 700;
 }
 
+/* Página de planos */
+
+.plans-page {
+    background:
+        linear-gradient(
+            180deg,
+            #f5f9fc 0%,
+            #ffffff 100%
+        );
+}
+
+
+/* Apresentação */
+
+.plans-label {
+    margin-bottom: 7px;
+
+    color: var(--green);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.plans-hero-text h1 {
+    margin-bottom: 12px;
+
+    font-size: 38px;
+    line-height: 1.1;
+}
+
+.plans-description {
+    font-size: 14px;
+}
+
+
+/* Tipos */
+
+.plan-type {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    color: var(--text-light);
+    background: var(--white);
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.plan-type:hover {
+    border-color: var(--green);
+
+    transform: translateY(-2px);
+}
+
+.plan-type.active {
+    border-color: var(--green);
+
+    color: var(--white);
+    background: var(--green);
+}
+
+.plan-type-icon {
+    font-size: 27px;
+}
+
+.plan-type p {
+    color: inherit;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* Título do plano */
+
+.plan-title h2 {
+    margin-bottom: 7px;
+
+    font-size: 25px;
+}
+
+.plan-title p {
+    font-size: 13px;
+}
+
+
+/* Informações */
+
+.plan-information {
+    border: 1px solid #c8f1df;
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #e9fff5,
+            #e1f9f1
+        );
+}
+
+.plan-information-icon {
+    color: var(--green);
+
+    font-size: 25px;
+}
+
+.plan-information-item p {
+    color: var(--text-light);
+
+    font-size: 10px;
+    line-height: 1.3;
+}
+
+.plan-information-item strong {
+    color: var(--navy);
+
+    font-size: 12px;
+}
+
+
+/* Semanas */
+
+.week-card {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: var(--white);
+
+    transition: 0.2s;
+}
+
+.week-card:hover {
+    border-color: var(--green);
+
+    transform: translateX(3px);
+}
+
+.week-icon {
+    border-radius: 7px;
+
+    color: var(--green);
+    background: var(--green-light);
+
+    font-size: 20px;
+}
+
+.week-description h3 {
+    margin-bottom: 3px;
+
+    font-size: 12px;
+}
+
+.week-description p {
+    font-size: 11px;
+}
+
+.week-training {
+    color: var(--text-light);
+
+    font-size: 10px;
+}
+
+.week-arrow {
+    color: #668aa2;
+
+    font-size: 22px;
+}
+
+
+/* Botão */
+
+.plan-details-button {
+    border-radius: 7px;
+
+    color: var(--white);
+    background: var(--green);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.plan-details-button:hover {
+    background: var(--green-dark);
+}
+
+.plan-details-button section {
+    color: var(--white);
+}
+
+/* Dashboard */
+
+.dashboard {
+    background: #f7fafc;
+}
+
+
+/* Menu lateral */
+
+.sidebar {
+    background:
+        linear-gradient(
+            120deg,
+            #071c2c,
+            #102b3f
+        );
+
+    border-right: none;
+}
+
+.sidebar-link {
+    border-radius: 7px;
+
+    color: var(--text-light);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.sidebar-link p {
+    color: inherit;
+
+    font-size: inherit;
+}
+
+.sidebar-link:hover {
+    color: var(--green);
+
+    background: var(--green-light);
+}
+
+.sidebar-link.active {
+    color: var(--white);
+    background: var(--green);
+}
+
+.sidebar-link.active p {
+    color: var(--white);
+}
+
+
+/* Header */
+
+.dashboard-header {
+    background:
+        linear-gradient(
+            120deg,
+            #071c2c,
+            #102b3f
+        );
+
+    border-bottom: none;
+}
+
+.dashboard-user img {
+    border-radius: 50%;
+}
+
+.dashboard-user p {
+    color: var(--navy);
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.dashboard-user-arrow {
+    color: var(--text-light);
+
+    font-size: 15px;
+}
+
+
+/* Saudação */
+
+.dashboard-welcome h1 {
+    margin-bottom: 5px;
+
+    font-size: 27px;
+}
+
+.dashboard-welcome p {
+    font-size: 14px;
+}
+
+
+/* Progresso */
+
+.progress-card {
+    border: 1px solid #edf1f4;
+    border-radius: 10px;
+
+    background: var(--white);
+
+    box-shadow:
+        0 3px 12px rgba(7, 28, 44, 0.04);
+}
+
+.progress-header h3 {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+}
+
+.progress-header p {
+    font-size: 10px;
+}
+
+.progress-header strong {
+    color: var(--text-light);
+
+    font-size: 11px;
+}
+
+.progress-bar {
+    border-radius: 10px;
+
+    background: #e7eef3;
+}
+
+.progress-value {
+    border-radius: 10px;
+
+    background: var(--green);
+}
+
+
+/* Estatísticas */
+
+.stat-card {
+    border: 1px solid #edf1f4;
+    border-radius: 10px;
+
+    background: var(--white);
+
+    box-shadow:
+        0 3px 12px rgba(7, 28, 44, 0.04);
+}
+
+.stat-icon {
+    border-radius: 8px;
+}
+
+.stat-green {
+    background: var(--green-light);
+}
+
+.stat-orange {
+    background: #fff4dc;
+}
+
+.stat-information p {
+    margin-bottom: 3px;
+
+    font-size: 10px;
+}
+
+.stat-information strong {
+    color: var(--navy);
+
+    font-size: 21px;
+}
+
+.stat-information small {
+    color: var(--text-light);
+
+    font-size: 10px;
+}
+
+
+/* Próximo treino */
+
+.next-workout h2 {
+    font-size: 15px;
+}
+
+.workout-card {
+    border: 1px solid #edf1f4;
+    border-radius: 10px;
+
+    background: var(--white);
+}
+
+.workout-image {
+    border-radius: 7px;
+}
+
+.workout-information h3 {
+    margin-bottom: 5px;
+
+    font-size: 13px;
+}
+
+.workout-information p {
+    font-size: 10px;
+}
+
+.workout-button {
+    border-radius: 20px;
+
+    color: var(--white);
+    background: var(--green);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.workout-button:hover {
+    background: var(--green-dark);
+}
+
+.workout-button section {
+    color: var(--white);
+}
+
+
+/* Motivação */
+
+.motivation-card {
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e7fbff,
+            #dffaf5
+        );
+}
+
+.motivation-card h3 {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.motivation-card p {
+    font-size: 10px;
+}
+
+/* Página da semana */
+
+.week-back {
+    color: var(--navy);
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.week-back:hover {
+    color: var(--green);
+}
+
+
+/* Cabeçalho */
+
+.week-label {
+    margin-bottom: 7px;
+
+    color: var(--green);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.week-page-header h1 {
+    margin-bottom: 6px;
+
+    font-size: 38px;
+}
+
+.week-page-header h2 {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+}
+
+.week-introduction {
+    max-width: 580px;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* Informações */
+
+.week-info {
+    background: var(--green-light);
+
+    border: 1px solid #a7e9cd;
+    border-radius: 10px;
+}
+
+.week-info-item p {
+    margin-bottom: 3px;
+
+    font-size: 12px;
+}
+
+.week-info-item strong {
+    color: var(--navy);
+
+    font-size: 15px;
+}
+
+
+/* Treinos */
+
+.week-training-title h2 {
+    margin-bottom: 5px;
+
+    font-size: 24px;
+}
+
+.week-training-title p {
+    font-size: 13px;
+}
+
+
+/* Cards */
+
+.training-card {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+.training-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px
+        rgba(7, 28, 44, 0.08);
+}
+
+.training-card-icon {
+    background: var(--green-light);
+
+    border-radius: 10px;
+}
+
+.training-card-content h3 {
+    margin-bottom: 4px;
+
+    font-size: 17px;
+}
+
+.training-card-content > p {
+    max-width: 400px;
+
+    font-size: 13px;
+    line-height: 1.35;
+}
+
+
+/* Etiquetas */
+
+.training-tags p {
+    padding: 4px 12px;
+
+    color: #35566e;
+    background: #edf4f8;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+}
+
+
+/* Ações */
+
+.training-arrow {
+    margin-right: 15px;
+
+    color: #315d77;
+
+    font-size: 25px;
+}
+
+.training-start {
+    padding: 12px 25px;
+
+    color: var(--white);
+    background: var(--green);
+
+    border-radius: 7px;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.training-start:hover {
+    background: var(--green-dark);
+}
+
+/* Página de treino */
+
+.training-back {
+    color: var(--navy);
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.training-back:hover {
+    color: var(--green);
+}
+
+
+/* Cabeçalho */
+
+.training-label {
+    margin-bottom: 7px;
+
+    color: var(--green);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.training-header h1 {
+    margin-bottom: 10px;
+
+    font-size: 36px;
+}
+
+.training-description {
+    font-size: 14px;
+}
+
+.training-meta-item {
+    border-radius: 20px;
+
+    background: #eaf2f7;
+}
+
+.training-meta-item p {
+    color: #35566e;
+
+    font-size: 11px;
+}
+
+
+/* Progresso */
+
+.training-progress-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: var(--white);
+}
+
+.training-progress-header h3 {
+    font-size: 12px;
+}
+
+.training-progress-header strong {
+    color: var(--navy);
+
+    font-size: 20px;
+}
+
+.training-progress-bar {
+    border-radius: 10px;
+
+    background: #e7eef3;
+}
+
+.training-progress-value {
+    border-radius: 10px;
+
+    background: var(--green);
+
+    transition: width 0.3s;
+}
+
+.training-progress-card > p {
+    font-size: 11px;
+}
+
+
+/* Título */
+
+.training-section-title h2 {
+    margin-bottom: 5px;
+
+    font-size: 24px;
+}
+
+.training-section-title p {
+    font-size: 13px;
+}
+
+
+/* Cards */
+
+.training-exercise-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: var(--white);
+}
+
+.training-exercise-number {
+    border-radius: 50%;
+
+    color: var(--white);
+    background: var(--green);
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.training-exercise-image {
+    border-radius: 8px;
+}
+
+.training-exercise-info h3 {
+    font-size: 16px;
+}
+
+.training-exercise-info > p {
+    font-size: 12px;
+}
+
+.training-exercise-tags p {
+    padding: 3px 10px;
+
+    border-radius: 15px;
+
+    font-size: 10px;
+}
+
+.training-exercise-tags p:first-child {
+    color: #1672b7;
+    background: #e1f1ff;
+}
+
+.training-exercise-tags p:last-child {
+    color: #087b48;
+    background: var(--green-light);
+}
+
+.training-exercise-details p {
+    color: #6e8799;
+
+    font-size: 10px;
+}
+
+
+/* Checkbox */
+
+.exercise-complete {
+    accent-color: var(--green);
+
+    cursor: pointer;
+}
+
+
+/* Dica */
+
+.training-tip {
+    border: 1px solid #bfeeda;
+    border-radius: 10px;
+
+    background: var(--green-light);
+}
+
+.training-tip h3 {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+}
+
+.training-tip p {
+    font-size: 12px;
+}
+
+
+/* Descanso */
+
+.training-rest {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: var(--white);
+}
+
+.training-rest h3 {
+    margin-bottom: 10px;
+
+    font-size: 13px;
+}
+
+.training-rest strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--green);
+
+    font-size: 25px;
+}
+
+.training-rest p {
+    font-size: 11px;
+}
+
+
+/* Finalizar */
+
+.finish-training-button {
+    border-radius: 7px;
+
+    color: var(--white);
+    background: var(--green);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.finish-training-button:disabled {
+    opacity: 0.45;
+
+    cursor: not-allowed;
+}
+
+.finish-training-button:not(:disabled):hover {
+    background: var(--green-dark);
+}
+
+
+
 /* Responsividade */
 
 @media (max-width: 500px) {

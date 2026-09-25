@@ -402,6 +402,193 @@
     transform: translateY(-50%);
 }
 
+/* Página de planos */
+
+.plans-page {
+    padding-bottom: 50px;
+}
+
+
+/* Apresentação */
+
+.plans-hero {
+    width: 100%;
+
+    padding: 55px 0 30px;
+}
+
+.plans-hero-content {
+    min-height: 210px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plans-hero-text {
+    width: 65%;
+}
+
+.plans-description {
+    max-width: 650px;
+}
+
+.plans-hero-image {
+    width: 220px;
+    height: 190px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plans-hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* Tipos de plano */
+
+.plan-types {
+    padding-bottom: 35px;
+}
+
+.plan-types-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.plan-type {
+    height: 125px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+}
+
+.plan-type-icon {
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Conteúdo do plano */
+
+.plan-title {
+    margin-bottom: 25px;
+}
+
+.plan-title p {
+    max-width: 650px;
+}
+
+
+/* Informações */
+
+.plan-information {
+    min-height: 85px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-bottom: 25px;
+}
+
+.plan-information-item {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 0 30px;
+}
+
+.plan-information-item:not(:last-child) {
+    border-right: 1px solid #bcebd7;
+}
+
+.plan-information-icon {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+
+/* Semanas */
+
+.weeks-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.week-card {
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 12px 20px;
+}
+
+.week-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.week-description {
+    flex: 1;
+
+    margin-left: 15px;
+}
+
+.week-training {
+    margin-right: 35px;
+}
+
+.week-arrow {
+    width: 20px;
+}
+
+
+/* Botão */
+
+.plan-details-button {
+    width: 100%;
+    min-height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
 /* Responsividade */
 
 @media (max-width: 900px) {
@@ -449,6 +636,22 @@
 
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plans-hero-text {
+    width: 60%;
+    }
+
+    .plans-hero-image {
+        width: 180px;
+    }
+
+    .plan-types-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plan-information-item {
+        padding: 0 15px;
     }
 }
 
@@ -532,6 +735,61 @@
 
     .exercise-info p {
         display: none;
+    }
+
+    .plans-hero {
+    padding-top: 35px;
+    }
+
+    .plans-hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .plans-hero-text {
+        width: 100%;
+    }
+
+    .plans-hero-image {
+        width: 150px;
+        height: 130px;
+
+        margin: 20px auto 0;
+    }
+
+    .plan-types-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .plan-type {
+        height: 100px;
+    }
+
+    .plan-information {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-information-item {
+        padding: 15px 20px;
+    }
+
+    .plan-information-item:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid #bcebd7;
+    }
+
+    .week-training {
+        display: none;
+    }
+
+    .week-card {
+        padding: 10px;
+    }
+
+    .week-description {
+        margin-left: 10px;
     }
 
 }
@@ -715,6 +973,875 @@
     text-align: center;
 }
 
+/* Dashboard */
+
+.dashboard {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+}
+
+
+/* Menu lateral */
+
+.sidebar {
+    width: 220px;
+    min-height: 100vh;
+
+    flex-shrink: 0;
+
+    padding: 25px 20px;
+}
+
+.dashboard-logo {
+    width: 125px;
+
+    display: block;
+
+    margin: 0 auto 35px;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.sidebar-link {
+    min-height: 42px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 0 15px;
+}
+
+.sidebar-link img {
+    width: 20px;
+    height: 20px;
+
+    object-fit: contain;
+}
+
+
+/* Área principal */
+
+.dashboard-area {
+    min-width: 0;
+    flex: 1;
+}
+
+
+/* Header */
+
+.dashboard-header {
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 0 35px;
+}
+
+.dashboard-user {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+}
+
+.dashboard-user img {
+    width: 34px;
+    height: 34px;
+
+    object-fit: cover;
+}
+
+.dashboard-user-arrow {
+    margin-left: 5px;
+}
+
+
+/* Conteúdo */
+
+.dashboard-content {
+    position: relative;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 45px 35px;
+}
+
+
+/* Saudação */
+
+.dashboard-welcome {
+    margin-bottom: 30px;
+}
+
+
+/* Progresso */
+
+.progress-card {
+    position: absolute;
+
+    top: 30px;
+    right: 35px;
+
+    width: 280px;
+
+    padding: 18px;
+}
+
+.progress-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+
+    overflow: hidden;
+}
+
+.progress-value {
+    width: 25%;
+    height: 100%;
+}
+
+
+/* Estatísticas */
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-top: 25px;
+}
+
+.stat-card {
+    min-height: 120px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.stat-icon {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-icon img {
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+}
+
+.stat-information {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Parte inferior */
+
+.dashboard-bottom {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+
+/* Próximo treino */
+
+.next-workout h2 {
+    margin-bottom: 15px;
+}
+
+.workout-card {
+    min-height: 150px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 15px;
+}
+
+.workout-image {
+    width: 115px;
+    height: 115px;
+
+    object-fit: cover;
+}
+
+.workout-information {
+    flex: 1;
+}
+
+.workout-button {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 15px;
+    padding: 10px 20px;
+}
+
+
+/* Motivação */
+
+.motivation-card {
+    min-height: 210px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+.motivation-card img {
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+
+/* Página da semana */
+
+.week-page {
+    min-height: 700px;
+    padding: 40px 0 70px;
+
+    background: #f5f9fc;
+}
+
+.week-page-container {
+    max-width: 1060px;
+}
+
+.week-back {
+    display: inline-block;
+
+    margin-bottom: 30px;
+}
+
+
+/* Cabeçalho da semana */
+
+.week-page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.week-page-text {
+    width: 60%;
+}
+
+.week-calendar-image {
+    width: 220px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.week-calendar-image img {
+    width: 170px;
+}
+
+
+/* Informações */
+
+.week-info {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-bottom: 42px;
+}
+
+.week-info-item {
+    min-height: 85px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 18px 30px;
+}
+
+.week-info-item img {
+    width: 35px;
+    height: 35px;
+
+    object-fit: contain;
+}
+
+.week-info-item:not(:last-child) {
+    border-right: 1px solid #a7e9cd;
+}
+
+
+/* Título */
+
+.week-training-title {
+    margin-bottom: 20px;
+}
+
+
+/* Lista */
+
+.week-training-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* Card */
+
+.training-card {
+    min-height: 135px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 18px 22px;
+}
+
+.training-card-icon {
+    width: 100px;
+    height: 100px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 25px;
+
+    overflow: hidden;
+}
+
+.training-card-icon img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.training-card-content {
+    flex: 1;
+}
+
+.training-tags {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 10px;
+}
+
+.training-card-actions {
+    width: 190px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 20px;
+}
+
+/* Página de treino */
+
+.training-page {
+    min-height: 750px;
+
+    padding: 40px 0 70px;
+
+    background: #f5f9fc;
+}
+
+.training-page-container {
+    max-width: 1060px;
+}
+
+
+/* Voltar */
+
+.training-back {
+    display: inline-block;
+
+    margin-bottom: 30px;
+}
+
+
+/* Cabeçalho */
+
+.training-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    margin-bottom: 40px;
+}
+
+.training-header-text {
+    flex: 1;
+}
+
+.training-description {
+    max-width: 600px;
+}
+
+.training-meta {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 18px;
+}
+
+.training-meta-item {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 7px 12px;
+}
+
+.training-meta-item img {
+    width: 20px;
+    height: 20px;
+
+    object-fit: contain;
+}
+
+
+/* Progresso */
+
+.training-progress-card {
+    width: 280px;
+
+    flex-shrink: 0;
+
+    padding: 18px;
+}
+
+.training-progress-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+}
+
+.training-progress-bar {
+    width: 100%;
+    height: 8px;
+
+    overflow: hidden;
+
+    margin-bottom: 10px;
+}
+
+.training-progress-value {
+    width: 0;
+    height: 100%;
+}
+
+
+/* Conteúdo */
+
+.training-main {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 2fr)
+        minmax(250px, 0.8fr);
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+
+/* Exercícios */
+
+.training-section-title {
+    margin-bottom: 20px;
+}
+
+.training-exercise-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.training-exercise-card {
+    min-height: 150px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 16px;
+}
+
+.training-exercise-number {
+    width: 35px;
+    height: 35px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.training-exercise-image {
+    width: 115px;
+    height: 115px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+}
+
+.training-exercise-info {
+    flex: 1;
+}
+
+.training-exercise-tags {
+    display: flex;
+
+    gap: 8px;
+
+    margin: 8px 0;
+}
+
+.training-exercise-details {
+    display: flex;
+
+    gap: 18px;
+
+    margin-top: 10px;
+}
+
+.exercise-complete {
+    width: 24px;
+    height: 24px;
+
+    flex-shrink: 0;
+}
+
+
+/* Lateral */
+
+.training-sidebar {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.training-tip,
+.training-rest {
+    padding: 20px;
+}
+
+.finish-training-button {
+    min-height: 45px;
+}
+
+/* Página de treino */
+
+.training-back {
+    color: var(--navy);
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.training-back:hover {
+    color: var(--green);
+}
+
+
+/* Cabeçalho */
+
+.training-label {
+    margin-bottom: 7px;
+
+    color: var(--green);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.training-header h1 {
+    margin-bottom: 10px;
+
+    font-size: 36px;
+}
+
+.training-description {
+    font-size: 14px;
+}
+
+.training-meta-item {
+    border-radius: 20px;
+
+    background: #eaf2f7;
+}
+
+.training-meta-item p {
+    color: #35566e;
+
+    font-size: 11px;
+}
+
+
+/* Progresso */
+
+.training-progress-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: var(--white);
+}
+
+.training-progress-header h3 {
+    font-size: 12px;
+}
+
+.training-progress-header strong {
+    color: var(--navy);
+
+    font-size: 20px;
+}
+
+.training-progress-bar {
+    border-radius: 10px;
+
+    background: #e7eef3;
+}
+
+.training-progress-value {
+    border-radius: 10px;
+
+    background: var(--green);
+
+    transition: width 0.3s;
+}
+
+.training-progress-card > p {
+    font-size: 11px;
+}
+
+
+/* Título */
+
+.training-section-title h2 {
+    margin-bottom: 5px;
+
+    font-size: 24px;
+}
+
+.training-section-title p {
+    font-size: 13px;
+}
+
+
+/* Cards */
+
+.training-exercise-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: var(--white);
+}
+
+.training-exercise-number {
+    border-radius: 50%;
+
+    color: var(--white);
+    background: var(--green);
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.training-exercise-image {
+    border-radius: 8px;
+}
+
+.training-exercise-info h3 {
+    font-size: 16px;
+}
+
+.training-exercise-info > p {
+    font-size: 12px;
+}
+
+.training-exercise-tags p {
+    padding: 3px 10px;
+
+    border-radius: 15px;
+
+    font-size: 10px;
+}
+
+.training-exercise-tags p:first-child {
+    color: #1672b7;
+    background: #e1f1ff;
+}
+
+.training-exercise-tags p:last-child {
+    color: #087b48;
+    background: var(--green-light);
+}
+
+.training-exercise-details p {
+    color: #6e8799;
+
+    font-size: 10px;
+}
+
+
+/* Checkbox */
+
+.exercise-complete {
+    accent-color: var(--green);
+
+    cursor: pointer;
+}
+
+
+/* Dica */
+
+.training-tip {
+    border: 1px solid #bfeeda;
+    border-radius: 10px;
+
+    background: var(--green-light);
+}
+
+.training-tip h3 {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+}
+
+.training-tip p {
+    font-size: 12px;
+}
+
+
+/* Descanso */
+
+.training-rest {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: var(--white);
+}
+
+.training-rest h3 {
+    margin-bottom: 10px;
+
+    font-size: 13px;
+}
+
+.training-rest strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--green);
+
+    font-size: 25px;
+}
+
+.training-rest p {
+    font-size: 11px;
+}
+
+
+/* Finalizar */
+
+.finish-training-button {
+    border-radius: 7px;
+
+    color: var(--white);
+    background: var(--green);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.finish-training-button:disabled {
+    opacity: 0.45;
+
+    cursor: not-allowed;
+}
+
+.finish-training-button:not(:disabled):hover {
+    background: var(--green-dark);
+}
+
 /* Responsividade */
 
 @media (max-width: 900px) {
@@ -759,6 +1886,30 @@
         padding: 40px;
     }
 
+    .sidebar {
+    width: 180px;
+    }
+
+    .dashboard-content {
+        padding: 35px 25px;
+    }
+
+    .progress-card {
+        position: static;
+
+        width: 100%;
+
+        margin-bottom: 20px;
+    }
+
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-bottom {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 
@@ -774,6 +1925,56 @@
 
     .login-form-container {
         padding: 25px 15px;
+    }
+
+    .dashboard {
+    flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+
+        padding: 15px;
+    }
+
+    .dashboard-logo {
+        margin-bottom: 20px;
+    }
+
+    .sidebar-menu {
+        flex-direction: row;
+
+        overflow-x: auto;
+    }
+
+    .sidebar-link {
+        min-width: fit-content;
+    }
+
+    .dashboard-header {
+        padding: 0 20px;
+    }
+
+    .dashboard-content {
+        padding: 25px 15px;
+    }
+
+    .dashboard-stats {
+        gap: 10px;
+    }
+
+    .stat-card {
+        min-height: 100px;
+    }
+
+    .workout-card {
+        align-items: flex-start;
+    }
+
+    .workout-image {
+        width: 90px;
+        height: 90px;
     }
 
 }
