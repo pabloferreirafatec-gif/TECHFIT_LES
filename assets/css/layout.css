@@ -402,6 +402,193 @@
     transform: translateY(-50%);
 }
 
+/* Página de planos */
+
+.plans-page {
+    padding-bottom: 50px;
+}
+
+
+/* Apresentação */
+
+.plans-hero {
+    width: 100%;
+
+    padding: 55px 0 30px;
+}
+
+.plans-hero-content {
+    min-height: 210px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plans-hero-text {
+    width: 65%;
+}
+
+.plans-description {
+    max-width: 650px;
+}
+
+.plans-hero-image {
+    width: 220px;
+    height: 190px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plans-hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* Tipos de plano */
+
+.plan-types {
+    padding-bottom: 35px;
+}
+
+.plan-types-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.plan-type {
+    height: 125px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+}
+
+.plan-type-icon {
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Conteúdo do plano */
+
+.plan-title {
+    margin-bottom: 25px;
+}
+
+.plan-title p {
+    max-width: 650px;
+}
+
+
+/* Informações */
+
+.plan-information {
+    min-height: 85px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-bottom: 25px;
+}
+
+.plan-information-item {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 0 30px;
+}
+
+.plan-information-item:not(:last-child) {
+    border-right: 1px solid #bcebd7;
+}
+
+.plan-information-icon {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+
+/* Semanas */
+
+.weeks-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.week-card {
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 12px 20px;
+}
+
+.week-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.week-description {
+    flex: 1;
+
+    margin-left: 15px;
+}
+
+.week-training {
+    margin-right: 35px;
+}
+
+.week-arrow {
+    width: 20px;
+}
+
+
+/* Botão */
+
+.plan-details-button {
+    width: 100%;
+    min-height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
 /* Responsividade */
 
 @media (max-width: 900px) {
@@ -449,6 +636,22 @@
 
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plans-hero-text {
+    width: 60%;
+    }
+
+    .plans-hero-image {
+        width: 180px;
+    }
+
+    .plan-types-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plan-information-item {
+        padding: 0 15px;
     }
 }
 
@@ -532,6 +735,61 @@
 
     .exercise-info p {
         display: none;
+    }
+
+    .plans-hero {
+    padding-top: 35px;
+    }
+
+    .plans-hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .plans-hero-text {
+        width: 100%;
+    }
+
+    .plans-hero-image {
+        width: 150px;
+        height: 130px;
+
+        margin: 20px auto 0;
+    }
+
+    .plan-types-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .plan-type {
+        height: 100px;
+    }
+
+    .plan-information {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-information-item {
+        padding: 15px 20px;
+    }
+
+    .plan-information-item:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid #bcebd7;
+    }
+
+    .week-training {
+        display: none;
+    }
+
+    .week-card {
+        padding: 10px;
+    }
+
+    .week-description {
+        margin-left: 10px;
     }
 
 }

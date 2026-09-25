@@ -1029,6 +1029,198 @@
     font-weight: 700;
 }
 
+/* Página de planos */
+
+.plans-page {
+    background:
+        linear-gradient(
+            180deg,
+            #f5f9fc 0%,
+            #ffffff 100%
+        );
+}
+
+
+/* Apresentação */
+
+.plans-label {
+    margin-bottom: 7px;
+
+    color: var(--green);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.plans-hero-text h1 {
+    margin-bottom: 12px;
+
+    font-size: 38px;
+    line-height: 1.1;
+}
+
+.plans-description {
+    font-size: 14px;
+}
+
+
+/* Tipos */
+
+.plan-type {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    color: var(--text-light);
+    background: var(--white);
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.plan-type:hover {
+    border-color: var(--green);
+
+    transform: translateY(-2px);
+}
+
+.plan-type.active {
+    border-color: var(--green);
+
+    color: var(--white);
+    background: var(--green);
+}
+
+.plan-type-icon {
+    font-size: 27px;
+}
+
+.plan-type p {
+    color: inherit;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* Título do plano */
+
+.plan-title h2 {
+    margin-bottom: 7px;
+
+    font-size: 25px;
+}
+
+.plan-title p {
+    font-size: 13px;
+}
+
+
+/* Informações */
+
+.plan-information {
+    border: 1px solid #c8f1df;
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #e9fff5,
+            #e1f9f1
+        );
+}
+
+.plan-information-icon {
+    color: var(--green);
+
+    font-size: 25px;
+}
+
+.plan-information-item p {
+    color: var(--text-light);
+
+    font-size: 10px;
+    line-height: 1.3;
+}
+
+.plan-information-item strong {
+    color: var(--navy);
+
+    font-size: 12px;
+}
+
+
+/* Semanas */
+
+.week-card {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: var(--white);
+
+    transition: 0.2s;
+}
+
+.week-card:hover {
+    border-color: var(--green);
+
+    transform: translateX(3px);
+}
+
+.week-icon {
+    border-radius: 7px;
+
+    color: var(--green);
+    background: var(--green-light);
+
+    font-size: 20px;
+}
+
+.week-description h3 {
+    margin-bottom: 3px;
+
+    font-size: 12px;
+}
+
+.week-description p {
+    font-size: 11px;
+}
+
+.week-training {
+    color: var(--text-light);
+
+    font-size: 10px;
+}
+
+.week-arrow {
+    color: #668aa2;
+
+    font-size: 22px;
+}
+
+
+/* Botão */
+
+.plan-details-button {
+    border-radius: 7px;
+
+    color: var(--white);
+    background: var(--green);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.plan-details-button:hover {
+    background: var(--green-dark);
+}
+
+.plan-details-button section {
+    color: var(--white);
+}
+
 /* Responsividade */
 
 @media (max-width: 500px) {
