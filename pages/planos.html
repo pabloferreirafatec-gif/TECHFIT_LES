@@ -114,62 +114,39 @@
 
         <section class="plan-types">
 
-            <section class="container plan-types-grid">
+    <section class="container plan-types-grid">
 
-                <button class="plan-type active">
-
-                    <section class="plan-type-icon">
-                        🔥
-                    </section>
-
-                    <p>
-                        Emagrecimento
-                    </p>
-
-                </button>
-
-
-                <button class="plan-type">
-
-                    <section class="plan-type-icon">
-                        🏋
-                    </section>
-
-                    <p>
-                        Ganho de massa
-                    </p>
-
-                </button>
-
-
-                <button class="plan-type">
-
-                    <section class="plan-type-icon">
-                        ⚡
-                    </section>
-
-                    <p>
-                        Mais disposição
-                    </p>
-
-                </button>
-
-
-                <button class="plan-type">
-
-                    <section class="plan-type-icon">
-                        ♡
-                    </section>
-
-                    <p>
-                        Saúde geral
-                    </p>
-
-                </button>
-
+        <button class="plan-type active" data-plan="emagrecimento">
+            <section class="plan-type-icon">
+                🔥
             </section>
+            <p>Emagrecimento</p>
+        </button>
 
-        </section>
+        <button class="plan-type" data-plan="massa">
+            <section class="plan-type-icon">
+                🏋
+            </section>
+            <p>Ganho de massa</p>
+        </button>
+
+        <button class="plan-type" data-plan="disposicao">
+            <section class="plan-type-icon">
+                ⚡
+            </section>
+            <p>Mais disposição</p>
+        </button>
+
+        <button class="plan-type" data-plan="saude">
+            <section class="plan-type-icon">
+                ♡
+            </section>
+            <p>Saúde geral</p>
+        </button>
+
+    </section>
+
+</section>
 
 
         <!-- Plano selecionado -->
@@ -180,11 +157,11 @@
 
                 <section class="plan-title">
 
-                    <h2>
+                    <h2 id="plan-title">
                         Plano de Emagrecimento
                     </h2>
 
-                    <p>
+                    <p id="plan-description">
                         Treinos de 3 a 4 dias por semana, com foco em queima
                         de gordura e condicionamento físico.
                     </p>
@@ -208,7 +185,7 @@
                                 Duração
                             </p>
 
-                            <strong>
+                            <strong id="plan-duration">
                                 4 semanas
                             </strong>
 
@@ -229,7 +206,7 @@
                                 Frequência
                             </p>
 
-                            <strong>
+                            <strong id="plan-frequency">
                                 3 a 4x por semana
                             </strong>
 
@@ -250,7 +227,7 @@
                                 Nível
                             </p>
 
-                            <strong>
+                            <strong id="plan-level">
                                 Iniciante
                             </strong>
 
@@ -263,7 +240,7 @@
 
                 <!-- Semanas -->
 
-                <section class="weeks-list">
+                <section class="weeks-list" id="weeks-list">
 
 
                     <!-- Semana 1 -->
@@ -507,6 +484,7 @@
 
     </footer>
 
+    <script src="../assets/js/planos.js"></script>
 </body>
 
 </html>
