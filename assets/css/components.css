@@ -2067,7 +2067,168 @@
     background: var(--green-dark);
 }
 
+/* Página de Progresso */
 
+.progress-label {
+    margin-bottom: 8px;
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.progress-header h1 {
+    margin-bottom: 8px;
+    color: var(--navy);
+    font-size: 36px;
+}
+
+.progress-header > p {
+    max-width: 520px;
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.progress-summary-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--white);
+}
+
+.progress-summary-card p {
+    margin-bottom: 4px;
+    color: var(--text-light);
+    font-size: 11px;
+}
+
+.progress-summary-card strong {
+    color: var(--navy);
+    font-size: 18px;
+}
+
+.progress-section-title {
+    margin-bottom: 14px;
+}
+
+.progress-section-title h2 {
+    margin-bottom: 4px;
+    color: var(--navy);
+    font-size: 21px;
+}
+
+.progress-section-title p {
+    color: var(--text-light);
+    font-size: 12px;
+}
+
+.progress-week-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--white);
+}
+
+.progress-week-info strong {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--green);
+    font-size: 22px;
+}
+
+.progress-week-info p {
+    color: var(--text-light);
+    font-size: 11px;
+}
+
+.progress-week-bar {
+    border-radius: 999px;
+    background: #e3ebf0;
+}
+
+.progress-week-value {
+    border-radius: 999px;
+    background: var(--green);
+}
+
+.progress-day {
+    border-radius: 8px;
+    background: #edf3f7;
+}
+
+.progress-day p {
+    color: var(--text-light);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.progress-day strong {
+    margin-top: 4px;
+    color: #6f8799;
+    font-size: 15px;
+}
+
+.progress-day.completed {
+    background: var(--green-light);
+    border: 1px solid #c7ead8;
+}
+
+.progress-day.completed strong {
+    color: var(--green);
+}
+
+.achievement-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--white);
+}
+
+.achievement-icon {
+    border-radius: 50%;
+    background: var(--green-light);
+}
+
+.achievement-card h3 {
+    margin-bottom: 4px;
+    color: var(--navy);
+    font-size: 14px;
+}
+
+.achievement-card p {
+    color: var(--text-light);
+    font-size: 11px;
+}
+
+.progress-history-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--white);
+}
+
+.progress-history-icon {
+    border-radius: 8px;
+    background: var(--green-light);
+}
+
+.progress-history-card h3 {
+    margin-bottom: 4px;
+    color: var(--navy);
+    font-size: 14px;
+}
+
+.progress-history-card p {
+    color: var(--text-light);
+    font-size: 11px;
+}
+
+.progress-history-status strong {
+    color: var(--green);
+    font-size: 11px;
+}
+
+.progress-history-status p {
+    margin-top: 3px;
+    font-size: 11px;
+}
 
 /* Responsividade */
 
