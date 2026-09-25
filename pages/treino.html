@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+
+    <title>Treino - TechFit</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <section class="container header-content">
+
+            <a href="../index.html" class="logo">
+
+                <img
+                    src="../assets/img/logo_techfit.png"
+                    alt="Logo TechFit">
+
+            </a>
+
+
+            <nav class="menu">
+
+                <a href="../index.html">
+                    Início
+                </a>
+
+                <a href="exercicios.html">
+                    Exercícios
+                </a>
+
+                <a href="planos.html" class="active">
+                    Planos
+                </a>
+
+                <a href="sobre.html">
+                    Sobre
+                </a>
+
+            </nav>
+
+
+            <section class="header-actions">
+
+                <a href="perfil.html" class="user-button">
+
+                    <img
+                        src="../assets/img/icon_user.png"
+                        alt="Usuário">
+
+                </a>
+
+            </section>
+
+        </section>
+
+    </header>
+
+
+    <!-- Treino -->
+
+    <main class="training-page">
+
+        <section class="container training-page-container">
+
+            <!-- Voltar -->
+
+            <a
+                href="semana.html"
+                class="training-back"
+                id="training-back">
+
+                ← Voltar para a semana
+
+            </a>
+
+
+            <!-- Cabeçalho -->
+
+            <section class="training-header">
+
+                <section class="training-header-text">
+
+                    <p
+                        class="training-label"
+                        id="training-plan">
+
+                        SEMANA 1 • PLANO DE EMAGRECIMENTO
+
+                    </p>
+
+                    <h1 id="training-title">
+                        Treino A - Corpo todo
+                    </h1>
+
+                    <p
+                        class="training-description"
+                        id="training-description">
+
+                        Exercícios básicos para ativar o corpo
+                        e melhorar a resistência inicial.
+
+                    </p>
+
+
+                    <section class="training-meta">
+
+                        <section class="training-meta-item">
+
+                            <img
+                                src="../assets/img/icon_clock.png"
+                                alt="Tempo">
+
+                            <p id="training-duration">
+                                25 minutos
+                            </p>
+
+                        </section>
+
+
+                        <section class="training-meta-item">
+
+                            <img
+                                src="../assets/img/icon_evolution.png"
+                                alt="Nível">
+
+                            <p id="training-level">
+                                Iniciante
+                            </p>
+
+                        </section>
+
+
+                        <section class="training-meta-item">
+
+                            <img
+                                src="../assets/img/icon_halter.png"
+                                alt="Exercícios">
+
+                            <p id="training-exercise-count">
+                                3 exercícios
+                            </p>
+
+                        </section>
+
+                    </section>
+
+                </section>
+
+
+                <!-- Progresso -->
+
+                <section class="training-progress-card">
+
+                    <section class="training-progress-header">
+
+                        <h3>
+                            Progresso do treino
+                        </h3>
+
+                        <strong id="training-progress-percent">
+                            0%
+                        </strong>
+
+                    </section>
+
+
+                    <section class="training-progress-bar">
+
+                        <section
+                            class="training-progress-value"
+                            id="training-progress-value">
+                        </section>
+
+                    </section>
+
+
+                    <p id="training-progress-text">
+                        0 de 3 exercícios concluídos
+                    </p>
+
+                </section>
+
+            </section>
+
+
+            <!-- Conteúdo -->
+
+            <section class="training-main">
+
+                <!-- Lista -->
+
+                <section class="training-exercises">
+
+                    <section class="training-section-title">
+
+                        <h2>
+                            Exercícios do treino
+                        </h2>
+
+                        <p>
+                            Siga a ordem dos exercícios
+                            e conclua cada etapa.
+                        </p>
+
+                    </section>
+
+
+                    <section
+                        class="training-exercise-list"
+                        id="training-exercise-list">
+
+                        <!-- JavaScript cria os exercícios -->
+
+                    </section>
+
+                </section>
+
+
+                <!-- Lateral -->
+
+                <aside class="training-sidebar">
+
+                    <section class="training-tip">
+
+                        <h3>
+                            💡 Dica do treino
+                        </h3>
+
+                        <p>
+                            Mantenha a postura correta durante
+                            os exercícios e respeite seu ritmo.
+                        </p>
+
+                    </section>
+
+
+                    <section class="training-rest">
+
+                        <h3>
+                            Descanso entre exercícios
+                        </h3>
+
+                        <strong>
+                            45 segundos
+                        </strong>
+
+                        <p>
+                            Use esse tempo para respirar
+                            e se preparar para o próximo exercício.
+                        </p>
+
+                    </section>
+
+
+                    <button
+                        class="finish-training-button"
+                        id="finish-training-button"
+                        disabled>
+
+                        Concluir treino →
+
+                    </button>
+
+                </aside>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="../assets/js/treino.js"></script>
+
+</body>
+
+</html>

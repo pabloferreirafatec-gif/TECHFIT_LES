@@ -1632,6 +1632,244 @@
     background: var(--green-dark);
 }
 
+/* Página de treino */
+
+.training-back {
+    color: var(--navy);
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.training-back:hover {
+    color: var(--green);
+}
+
+
+/* Cabeçalho */
+
+.training-label {
+    margin-bottom: 7px;
+
+    color: var(--green);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.training-header h1 {
+    margin-bottom: 10px;
+
+    font-size: 36px;
+}
+
+.training-description {
+    font-size: 14px;
+}
+
+.training-meta-item {
+    border-radius: 20px;
+
+    background: #eaf2f7;
+}
+
+.training-meta-item p {
+    color: #35566e;
+
+    font-size: 11px;
+}
+
+
+/* Progresso */
+
+.training-progress-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: var(--white);
+}
+
+.training-progress-header h3 {
+    font-size: 12px;
+}
+
+.training-progress-header strong {
+    color: var(--navy);
+
+    font-size: 20px;
+}
+
+.training-progress-bar {
+    border-radius: 10px;
+
+    background: #e7eef3;
+}
+
+.training-progress-value {
+    border-radius: 10px;
+
+    background: var(--green);
+
+    transition: width 0.3s;
+}
+
+.training-progress-card > p {
+    font-size: 11px;
+}
+
+
+/* Título */
+
+.training-section-title h2 {
+    margin-bottom: 5px;
+
+    font-size: 24px;
+}
+
+.training-section-title p {
+    font-size: 13px;
+}
+
+
+/* Cards */
+
+.training-exercise-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: var(--white);
+}
+
+.training-exercise-number {
+    border-radius: 50%;
+
+    color: var(--white);
+    background: var(--green);
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.training-exercise-image {
+    border-radius: 8px;
+}
+
+.training-exercise-info h3 {
+    font-size: 16px;
+}
+
+.training-exercise-info > p {
+    font-size: 12px;
+}
+
+.training-exercise-tags p {
+    padding: 3px 10px;
+
+    border-radius: 15px;
+
+    font-size: 10px;
+}
+
+.training-exercise-tags p:first-child {
+    color: #1672b7;
+    background: #e1f1ff;
+}
+
+.training-exercise-tags p:last-child {
+    color: #087b48;
+    background: var(--green-light);
+}
+
+.training-exercise-details p {
+    color: #6e8799;
+
+    font-size: 10px;
+}
+
+
+/* Checkbox */
+
+.exercise-complete {
+    accent-color: var(--green);
+
+    cursor: pointer;
+}
+
+
+/* Dica */
+
+.training-tip {
+    border: 1px solid #bfeeda;
+    border-radius: 10px;
+
+    background: var(--green-light);
+}
+
+.training-tip h3 {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+}
+
+.training-tip p {
+    font-size: 12px;
+}
+
+
+/* Descanso */
+
+.training-rest {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: var(--white);
+}
+
+.training-rest h3 {
+    margin-bottom: 10px;
+
+    font-size: 13px;
+}
+
+.training-rest strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--green);
+
+    font-size: 25px;
+}
+
+.training-rest p {
+    font-size: 11px;
+}
+
+
+/* Finalizar */
+
+.finish-training-button {
+    border-radius: 7px;
+
+    color: var(--white);
+    background: var(--green);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.finish-training-button:disabled {
+    opacity: 0.45;
+
+    cursor: not-allowed;
+}
+
+.finish-training-button:not(:disabled):hover {
+    background: var(--green-dark);
+}
+
 
 
 /* Responsividade */
