@@ -87,153 +87,19 @@
 
                 <section class="exercise-filters">
 
-                    <button class="filter active">Todos</button>
-                    <button class="filter">Iniciante</button>
-                    <button class="filter">Intermediário</button>
-                    <button class="filter">Avançado</button>
+                    <button class="filter active" data-nivel="todos">Todos</button>
+                    <button class="filter" data-nivel="iniciante">Iniciante</button>
+                    <button class="filter" data-nivel="intermediario">Intermediário</button>
+                    <button class="filter" data-nivel="avancado">Avançado</button>
 
                 </section>
 
 
-                <!-- Lista de exercícios -->
+                <!-- Lista de exercícios (preenchida via JS a partir do banco de dados) -->
 
-                <section class="exercise-list">
+                <section class="exercise-list" id="lista-exercicios">
 
-                    <section class="exercise-card">
-
-                        <img
-                            src="../assets/img/agachamento.png"
-                            alt="Agachamento"
-                            class="exercise-image">
-
-                        <section class="exercise-info">
-
-                            <h3>Agachamento</h3>
-
-                            <section class="exercise-tags">
-                                <section class="tag muscle">Pernas</section>
-                                <section class="tag beginner">Iniciante</section>
-                            </section>
-
-                            <p>
-                                Um dos melhores exercícios para fortalecer<br>
-                                as pernas e o glúteo.
-                            </p>
-
-                        </section>
-
-                        <section class="exercise-arrow">›</section>
-
-                    </section>
-
-
-                    <section class="exercise-card">
-
-                        <img
-                            src="../assets/img/flexao.png"
-                            alt="Flexão de braço"
-                            class="exercise-image">
-
-                        <section class="exercise-info">
-
-                            <h3>Flexão de braço</h3>
-
-                            <section class="exercise-tags">
-                                <section class="tag muscle">Peito</section>
-                                <section class="tag beginner">Iniciante</section>
-                            </section>
-
-                            <p>
-                                Trabalha o peitoral, ombros e tríceps.<br>
-                                Ótimo para o corpo todo.
-                            </p>
-
-                        </section>
-
-                        <section class="exercise-arrow">›</section>
-
-                    </section>
-
-
-                    <section class="exercise-card">
-
-                        <img
-                            src="../assets/img/prancha.png"
-                            alt="Prancha"
-                            class="exercise-image">
-
-                        <section class="exercise-info">
-
-                            <h3>Prancha</h3>
-
-                            <section class="exercise-tags">
-                                <section class="tag muscle">Core</section>
-                                <section class="tag beginner">Iniciante</section>
-                            </section>
-
-                            <p>
-                                Fortalece o abdômen e melhora a postura.
-                            </p>
-
-                        </section>
-
-                        <section class="exercise-arrow">›</section>
-
-                    </section>
-
-
-                    <section class="exercise-card">
-
-                        <img
-                            src="../assets/img/avanco.png"
-                            alt="Avanço"
-                            class="exercise-image">
-
-                        <section class="exercise-info">
-
-                            <h3>Avanço</h3>
-
-                            <section class="exercise-tags">
-                                <section class="tag muscle">Pernas</section>
-                                <section class="tag intermediate">Intermediário</section>
-                            </section>
-
-                            <p>
-                                Aumenta o equilíbrio e trabalha pernas e glúteos.
-                            </p>
-
-                        </section>
-
-                        <section class="exercise-arrow">›</section>
-
-                    </section>
-
-
-                    <section class="exercise-card">
-
-                        <img
-                            src="../assets/img/abdominal.png"
-                            alt="Abdominal bicicleta"
-                            class="exercise-image">
-
-                        <section class="exercise-info">
-
-                            <h3>Abdominal bicicleta</h3>
-
-                            <section class="exercise-tags">
-                                <section class="tag muscle">Core</section>
-                                <section class="tag intermediate">Intermediário</section>
-                            </section>
-
-                            <p>
-                                Ativa o abdômen e melhora a resistência.
-                            </p>
-
-                        </section>
-
-                        <section class="exercise-arrow">›</section>
-
-                    </section>
+                    <p class="exercise-loading">Carregando exercícios...</p>
 
                 </section>
 
@@ -241,7 +107,226 @@
 
         </section>
 
+
+        <!-- Modal: adicionar exercício à lista de treino -->
+
+        <section class="modal-overlay" id="modal-treino">
+
+            <section class="modal-box">
+
+                <button
+                    type="button"
+                    class="modal-close"
+                    id="modal-fechar"
+                    aria-label="Fechar">
+                    ×
+                </button>
+
+                <h3 id="modal-titulo">Adicionar exercício</h3>
+
+                <form id="form-treino" novalidate>
+
+                    <input type="hidden" id="modal-exercicio-id">
+
+                    <div class="campos-exercicio">
+
+                        <div class="campo-exercicio">
+                            <label for="modal-series">Séries</label>
+                            <input
+                                type="number"
+                                id="modal-series"
+                                min="1"
+                                placeholder="Ex: 3"
+                                required>
+                        </div>
+
+                        <div class="campo-exercicio">
+                            <label for="modal-repeticoes">Repetições</label>
+                            <input
+                                type="number"
+                                id="modal-repeticoes"
+                                min="1"
+                                placeholder="Ex: 12"
+                                required>
+                        </div>
+
+                        <div class="campo-exercicio" id="modal-carga-wrapper">
+                            <label for="modal-carga">Carga (kg)</label>
+                            <input
+                                type="number"
+                                id="modal-carga"
+                                min="0"
+                                step="0.5"
+                                placeholder="Ex: 10">
+                        </div>
+
+                    </div>
+
+                    <small class="error-message" id="modal-erro"></small>
+
+                    <button type="submit" class="register-button">
+                        Adicionar à lista de treino
+                    </button>
+
+                </form>
+
+            </section>
+
+        </section>
+
     </main>
+
+
+    <footer class="footer">
+
+        <section class="container footer-grid">
+
+
+            <!-- Logo e descrição -->
+
+            <section class="footer-brand">
+
+                <img
+                    src="../assets/img/logo_techfit.png"
+                    alt="Logo TechFit"
+                    class="footer-logo">
+
+                <p>
+                    Mais que um site, um parceiro<br>
+                    na sua jornada por uma vida<br>
+                    mais saudável.
+                </p>
+
+
+                <section class="social-links">
+
+                    <a href="#">
+                        Instagram
+                    </a>
+
+                    <a href="#">
+                        YouTube
+                    </a>
+
+                    <a href="#">
+                        Facebook
+                    </a>
+
+                    <a href="#">
+                        X
+                    </a>
+
+                </section>
+
+            </section>
+
+
+            <!-- Links -->
+
+            <section class="footer-links">
+
+                <h3>
+                    Links úteis
+                </h3>
+
+                <a href="../index.html">
+                    Início
+                </a>
+
+                <a href="exercicios.html">
+                    Exercícios
+                </a>
+
+                <a href="planos.html">
+                    Planos
+                </a>
+
+                <a href="sobre.html">
+                    Sobre
+                </a>
+
+            </section>
+
+
+            <!-- Suporte -->
+
+            <section class="footer-links">
+
+                <h3>
+                    Suporte
+                </h3>
+
+                <a href="#">
+                    Central de ajuda
+                </a>
+
+                <a href="#">
+                    Termos de uso
+                </a>
+
+                <a href="#">
+                    Política de privacidade
+                </a>
+
+                <a href="#">
+                    Contato
+                </a>
+
+            </section>
+
+
+            <!-- Newsletter -->
+
+            <section class="newsletter">
+
+                <h3>
+                    Receba nossas novidades
+                </h3>
+
+                <p>
+                    Dicas, treinos e conteúdos exclusivos<br>
+                    para você evoluir sempre.
+                </p>
+
+
+                <form class="newsletter-form">
+
+                    <section>
+                        ✉
+                    </section>
+
+                    <input
+                        type="email"
+                        placeholder="Seu e-mail">
+
+                    <button type="submit">
+                        →
+                    </button>
+
+                </form>
+
+            </section>
+
+        </section>
+
+
+        <!-- Footer inferior -->
+
+        <section class="container footer-bottom">
+
+            <p>
+                © 2026 TechFit. Todos os direitos reservados.
+            </p>
+
+            <p>
+                Juntos por uma vida mais saudável.
+            </p>
+
+        </section>
+
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
 
 </body>
 
