@@ -2,215 +2,230 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/layout.css">
-    <link rel="stylesheet" href="../assets/css/components.css">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <title>Entrar - TechFit</title>
+    <link
+        rel="stylesheet"
+        href="../assets/css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/layout.css">
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/components.css">
+
+    <title>Cadastro - TechFit</title>
+
 </head>
 
 <body>
 
-    <main class="login-page">
 
-        <!-- Logo -->
+    <!-- Header -->
 
-        <header class="header">
+    <header class="header">
 
-            <section class="container header-content">
+        <section class="container header-content">
 
-                <a href="index.html" class="logo">
-                    <img src="../assets/img/logo_techfit.png" alt="Logo TechFit">
+            <a href="../index.html" class="logo">
+
+                <img
+                    src="../assets/img/logo_techfit.png"
+                    alt="Logo TechFit">
+
+            </a>
+
+
+            <nav class="menu">
+
+                <a href="../index.html">
+                    Início
                 </a>
 
-                <nav class="menu">
-                    <a href="index.html">Início</a>
-                    <a href="pages/exercicios.html">Exercícios</a>
-                    <a href="pages/planos.html">Planos</a>
-                    <a href="pages/sobre.html">Sobre</a>
-                </nav>
+                <a href="exercicios.html">
+                    Exercícios
+                </a>
 
-                <section class="header-actions">
+                <a href="planos.html">
+                    Planos
+                </a>
 
-                    <a href="pages/perfil.html" class="user-button">
-                        <img src="../assets/img/icon_user.png" alt="Usuário">
-                    </a>
+                <a href="sobre.html">
+                    Sobre
+                </a>
 
-                    <a href="pages/login.html" class="btn btn-outline">
-                        Entrar
-                    </a>
+            </nav>
 
-                    <a href="pages/cadastro.html" class="btn btn-primary">
-                        Começar agora
-                    </a>
 
-                </section>
+            <section class="header-actions">
+
+                <a href="perfil.html" class="user-button">
+
+                    <img
+                        src="../assets/img/icon_user.png"
+                        alt="Usuário">
+
+                </a>
+
+
+                <a href="login.html" class="btn btn-outline">
+                    Entrar
+                </a>
+
+
+                <a href="cadastro.html" class="btn btn-primary">
+                    Começar agora
+                </a>
 
             </section>
 
-        </header>
+        </section>
+
+    </header>
 
 
-        <!-- Conteúdo -->
+    <!-- Cadastro -->
 
-        <section class="login-container">
+    <main class="register">
+
+        <section class="register-container">
+
 
             <!-- Lado esquerdo -->
 
-            <section class="login-banner">
+            <section class="register-intro">
 
-                <section class="banner-title">
+                <section class="register-intro-text">
 
-                    <h1>Bem-vindo de volta!</h1>
+                    <h2>
+                        Comece sua jornada!
+                    </h2>
 
                     <p>
-                        Entre na sua conta e continue sua jornada.
+                        Crie sua conta e dê o primeiro passo para uma vida
+                        mais saudável.
                     </p>
 
                 </section>
 
-                <!-- Elementos decorativos -->
 
-                <span class="decoration green-one"></span>
+                <section class="register-image">
 
-                <span class="decoration blue-one"></span>
+                    <img
+                        src="../assets/img/login-model.png"
+                        alt="Pessoa praticando exercícios">
 
-                <span class="decoration green-two"></span>
-
-                <!-- Pessoa -->
-
-                <img
-                    src="../assets/img/login-model.png"
-                    alt="Mulher praticando atividade física"
-                    class="login-model">
+                </section>
 
 
-                <!-- Frase -->
+                <p class="register-message">
 
-                <section class="banner-message">
+                    Pequenos hábitos geram<br>
 
-                    <p>
-                        <strong>
-                            Pequenos<br>
-                            hábitos
-                        </strong>
-
-                        geram<br>
+                    <strong>
                         grandes resultados.
-                    </p>
+                    </strong>
 
-                </section>
+                </p>
 
             </section>
 
 
-            <!-- Formulário -->
+            <!-- Lado direito -->
 
-            <section class="login-form-container">
+            <section class="register-form-area">
 
-                <form class="login-form">
-
-                    <h2>Entrar</h2>
+                <section class="register-form">
 
 
-                    <!-- E-mail -->
+                    <section class="register-title">
 
-                    <section class="input-group">
+                        <h1>
+                            Login
+                        </h1>
 
-                        <span class="input-icon">✉</span>
-
-                        <section class="input-icon">✉</section>
-
-                        <input
-                            type="text"
-                            name="usuario"
-                            placeholder="E-mail ou usuário"
-                            required>
+                        <p>
+                            Preencha seus dados para logar.
+                        </p>
 
                     </section>
 
 
-                    <!-- Senha -->
+                    <form>
 
-                    <section class="input-group">
+                        <!-- E-mail -->
 
-                        <span class="input-icon">♙</span>
+                        <label for="email">
+                            E-mail
+                        </label>
 
-                        <section class="input-icon">♙</section>
+                        <section class="input-group">
 
-                        <input
-                            type="password"
-                            name="senha"
-                            id="senha"
-                            placeholder="Senha"
-                            required>
+                            <section>
+                                ✉
+                            </section>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Digite seu e-mail"
+                                required>
+
+                        </section>
+
+
+                        <!-- Senha -->
+
+                        <label for="senha">
+                            Senha
+                        </label>
+
+                        <section class="input-group">
+
+                            <section>
+                                ♙
+                            </section>
+
+                            <input
+                                type="password"
+                                id="senha"
+                                name="senha"
+                                placeholder="Digite sua senha"
+                                required>
+
+                        </section>
+
+
+                        <!-- Botão cadastro -->
 
                         <button
-                            type="button"
-                            class="show-password"
-                            onclick="mostrarSenha()">
+                            type="submit"
+                            class="register-button">
 
-                            ◉
+                            Login
 
                         </button>
 
-                    </section>
-
-
-                    <!-- Opções -->
-
-                    <section class="login-options">
-
-                        <label class="remember">
-
-                            <input type="checkbox">
-
-
-                            <span>
-                                Lembrar de mim
-                            </span>
-
-                            <section>
-                                Lembrar de mim
-                            </section>
-
-
-                        </label>
-
-                        <a href="#">
-                            Esqueceu sua senha?
-                        </a>
-
-                    </section>
-
-
-                    <!-- Botão entrar -->
-
-                    <button
-                        type="submit"
-                        class="btn-login">
-
-                        Entrar
-
-                    </button>
+                    </form>
 
 
                     <!-- Separador -->
 
-                    <section class="separator">
-
-                        <span></span>
-
-                        <p>ou</p>
-
-                        <span></span>
+                    <section class="register-divider">
 
                         <section></section>
 
-                        <p>ou</p>
+                        <p>
+                            ou
+                        </p>
 
                         <section></section>
 
@@ -220,27 +235,26 @@
                     <!-- Google -->
 
                     <button
-                        type="button"
-                        class="btn-google">
+                        class="google-button"
+                        type="button">
 
+                        <img
+                            src="../assets/img/google_icon.png"
+                            alt="Google"
+                            class="google-icon">
 
-                        <span class="google-icon">
-                            G
-                        </span>
-
-
-                        <img src="../assets/img/google_icon.png" class="google-icon">
-
-                        Continuar com o Google
+                        <p>
+                            Continuar com o Google
+                        </p>
 
                     </button>
 
 
-                    <!-- Cadastro -->
+                    <!-- Cadastro link -->
 
-                    <p class="register">
+                    <p class="login-link">
 
-                        Não tem uma conta?
+                        Ainda não possui uma conta?
 
                         <a href="cadastro.html">
                             Cadastre-se
@@ -248,7 +262,7 @@
 
                     </p>
 
-                </form>
+                </section>
 
             </section>
 
@@ -256,9 +270,15 @@
 
     </main>
 
+
+    <!-- Footer -->
+
     <footer class="footer">
 
         <section class="container footer-grid">
+
+
+            <!-- Logo e descrição -->
 
             <section class="footer-brand">
 
@@ -273,54 +293,103 @@
                     mais saudável.
                 </p>
 
+
                 <section class="social-links">
 
-                    <a href="#">Instagram</a>
-                    <a href="#">YouTube</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">X</a>
+                    <a href="#">
+                        Instagram
+                    </a>
+
+                    <a href="#">
+                        YouTube
+                    </a>
+
+                    <a href="#">
+                        Facebook
+                    </a>
+
+                    <a href="#">
+                        X
+                    </a>
 
                 </section>
 
             </section>
 
 
+            <!-- Links -->
+
             <section class="footer-links">
 
-                <h3>Links úteis</h3>
+                <h3>
+                    Links úteis
+                </h3>
 
-                <a href="index.html">Início</a>
-                <a href="exercicios.html">Exercícios</a>
-                <a href="planos.html">Planos</a>
-                <a href="sobre.html">Sobre</a>
+                <a href="../index.html">
+                    Início
+                </a>
+
+                <a href="exercicios.html">
+                    Exercícios
+                </a>
+
+                <a href="planos.html">
+                    Planos
+                </a>
+
+                <a href="sobre.html">
+                    Sobre
+                </a>
 
             </section>
 
 
+            <!-- Suporte -->
+
             <section class="footer-links">
 
-                <h3>Suporte</h3>
+                <h3>
+                    Suporte
+                </h3>
 
-                <a href="#">Central de ajuda</a>
-                <a href="#">Termos de uso</a>
-                <a href="#">Política de privacidade</a>
-                <a href="#">Contato</a>
+                <a href="#">
+                    Central de ajuda
+                </a>
+
+                <a href="#">
+                    Termos de uso
+                </a>
+
+                <a href="#">
+                    Política de privacidade
+                </a>
+
+                <a href="#">
+                    Contato
+                </a>
 
             </section>
 
+
+            <!-- Newsletter -->
 
             <section class="newsletter">
 
-                <h3>Receba nossas novidades</h3>
+                <h3>
+                    Receba nossas novidades
+                </h3>
 
                 <p>
                     Dicas, treinos e conteúdos exclusivos<br>
                     para você evoluir sempre.
                 </p>
 
+
                 <form class="newsletter-form">
 
-                    <section>✉</section>
+                    <section>
+                        ✉
+                    </section>
 
                     <input
                         type="email"
@@ -337,6 +406,8 @@
         </section>
 
 
+        <!-- Footer inferior -->
+
         <section class="container footer-bottom">
 
             <p>
@@ -344,7 +415,7 @@
             </p>
 
             <p>
-                Juntos por uma vida mais saudável. 
+                Juntos por uma vida mais saudável.
             </p>
 
         </section>

@@ -698,8 +698,7 @@
     margin: 20px 0;
 }
 
-.separator section 
-.separator span {
+.separator section {
     height: 1px;
 
     flex: 1;
@@ -737,10 +736,12 @@
 }
 
 .google-icon {
-    color: #4285f4;
+    width: 18px;
+    height: 18px;
+    max-width: 18px;
 
-    font-size: 18px;
-    font-weight: bold;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 
